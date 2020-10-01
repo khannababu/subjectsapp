@@ -1,0 +1,60 @@
+:host ::ng-deep {
+  mat-card-title {
+    font-size: 11px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Tahoma;
+    color: black;
+  }
+
+  mat-card {
+    width: 100%;
+    background: white;
+    border: 0.1px solid whitesmoke;
+    padding: 5px;
+  }
+
+  mat-card-subtitle {
+    text-align: center;
+    font-size: 11px;
+    font-family: Arial;
+    color: black;
+  }
+
+  .mat-expansion-panel-header,
+  .mat-expansion-panel-header:hover {
+    height: 15px !important;
+    background-color: white !important;
+  }
+
+  .mat-expansion-panel-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .mat-expansion-indicator {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 50%;
+    color: black;
+    transform: rotate(45deg);
+    vertical-align: baseline;
+  }
+}
+
+.ellipsis-bttn {
+  height: 24px;
+  line-height: 0px;
+  min-width: 40px;
+  top: 14px;
+  left: -4px;
+  color: black;
+}
+
+h5 {
+  font-family: Arial;
+  text-align: left;
+  color: black;
+  margin: 0px 5px 2px;
+}

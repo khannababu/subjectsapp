@@ -1,0 +1,230 @@
+:host ::ng-deep {
+  mat-ink-bar {
+    display: none;
+  }
+}
+
+.subject-label {
+  font-family: Arial;
+  font-size: 14px;
+  // font-weight: bold;
+}
+
+.subject-details-card {
+  margin-left: -3.5rem;
+}
+
+.mat-card-title {
+  font-size: 11px;
+  font-family: Arial;
+  margin-bottom: unset;
+  // font-weight: bold;
+  color: black;
+
+}
+
+.mat-card-subtitle {
+  margin-top: unset;
+  font-family: Tahoma;
+  font-size: 11px;
+  margin-bottom: unset;
+  color: black;
+  // font-weight: bold;
+}
+
+.phone-divider {
+  left: 32px;
+  top: 31px;
+  width: 83%;
+}
+
+.email-divider {
+  left: 31px;
+  top: 161px;
+  width: 83%;
+}
+
+.email-title {
+  padding: 30px 0px 0px 0px;
+}
+
+.document-title {
+  padding: 30px 0px 0px 0px;
+}
+
+.document-divider {
+  left: 30px;
+  top: 263px;
+  width: 83%;
+}
+
+.address-divider {
+  left: 77px;
+  top: 31px;
+  width: 66%;
+}
+
+.mat-badge {
+  width: 0;
+  top: 11px;
+}
+
+.landmark {
+  padding-left: 2rem;
+}
+
+.mat-raised-button {
+  cursor: pointer;
+}
+
+mat-card {
+  margin-right: 0 !important;
+  padding: 13px !important;
+  min-width: 25% !important;
+  box-shadow: unset !important;
+}
+
+.address-col {
+  padding-bottom: 0rem;
+}
+
+.phone-section {
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+}
+
+.phone-div {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 80px;
+}
+
+.addresses-div {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 393px;
+  margin-left: 4rem;
+}
+
+.gaps {
+  padding-bottom: 4px;
+}
+
+.email-gaps {
+  padding-bottom: 5px;
+  padding-left: 1rem;
+}
+
+.doc-gaps {
+  padding-top: 5px;
+  padding-left: 1rem;
+
+}
+
+.leftmarginclass {
+  margin-left: -24px;
+  padding-top: 4px;
+}
+
+.documents-div {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 160px;
+}
+
+.gapclass {
+  padding-bottom: 10px;
+}
+
+.phone-numbers-div {
+  padding-bottom: 0rem;
+}
+
+.emails-div {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 52px;
+}
+
+.phone-icon {
+  height: 16px;
+  width: 16px;
+  color: #0074bb;
+  margin-left: -1.75rem;
+}
+
+// .phone-title {
+//   margin-right: unset !important;
+//   margin-left: 25px;
+//   padding-top: 0px;
+//   color: black;
+// }
+
+// :host ::ng-deep {
+//   .mat-tab-label {
+//     color: unset !important;
+//     font-weight: bold !important;
+//     font-family: Tahoma !important;
+//   }
+
+//   .mat-tab-label .mat-tab-label-content {
+//     color: black;
+//   }
+// }
+
+.phone-titlemain {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 19px;
+  color: black;
+}
+
+.email-title {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 12px;
+  color: black;
+  padding-left: 1.1rem;
+}
+
+.email-gap {
+  padding-bottom: 3px;
+}
+
+.phone-gaps {
+  padding-bottom: 3px;
+}
+.document-title {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 12px;
+  color: black;
+  margin-left: 17px;
+}
+
+.phone-gap {
+  padding-left: 1rem;
+  padding-bottom: 5px;
+}
+
+.address-link {
+  color: blue;
+  text-decoration: none;
+  font-style: Arial;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 11px;
+  font-family: Tahoma;
+  color: black;
+}
+
+.addresses-title {
+  font-size: 12px;
+  color: black;
+  font-family: Tahoma;
+  font-weight: bold;
+  margin-left: 4.1rem;
+}

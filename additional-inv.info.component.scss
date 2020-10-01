@@ -1,0 +1,205 @@
+.mat-card-title {
+  font-size: 12px;
+  font-family: Tahoma;
+  margin-bottom: unset;
+  text-align: left;
+}
+
+.mat-card-subtitle {
+  margin-top: unset;
+  font-family: Tahoma;
+  font-size: 12px;
+  margin-bottom: unset;
+  color: unset;
+  font-weight: bold;
+  text-align: right;
+}
+
+// .secondrow {
+//   padding-right: 1rem;
+// }
+
+// .thirdrow {
+//   padding-right: 1rem;
+// }
+
+mat-card {
+  // margin-right: 15px !important;
+  padding-right: 157px !important;
+  width: 30% !important;
+  // text-align: left;
+  box-shadow: unset !important;
+  margin-top: -2px;
+  margin-left: -8px;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 40px !important;
+}
+
+.additional-details-row {
+  padding-left: 0.5rem;
+  // font-family: Tahoma;
+}
+
+.investigation-links {
+  padding: 0.5rem 0rem 1rem 1rem;
+  font-family: Tahoma;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.selected {
+  color: #0074bb;
+  font-family: Arial;
+  text-decoration: underline;
+  font-size: 13px; 
+}
+
+.unselected {
+  color: black;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+.ref-no {
+  font-size: 13px;
+  padding: 1rem 0.5rem;
+  text-decoration: underline;
+  color: #0178a0;
+}
+
+.ufo {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 15px;
+  padding-left: 0px;
+}
+
+.border {
+  border: 1px solid grey;
+  padding: 13px 0px 14px 2px;
+  border-width: thin;
+  background-color: white;
+}
+
+.mat-icon {
+  fill: #0074bb;
+}
+
+.crud-bttn {
+  padding: 0px 4px 0px 0px;
+  height: 26px;
+  width: 26px;
+  line-height: 26px;
+}
+
+.lobclass {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
+  background-color: white;
+}
+
+.background {
+  background-color: white;
+}
+
+.line {
+  padding-left: 2rem;
+  border: 1px solid grey;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pfi {
+  font-weight: bold;
+  font-family: Tahoma;
+  font-size: 13px;
+}
+
+.borderwhole {
+  border: 1px solid grey;
+  padding-left: 2rem;
+}
+
+.name {
+  font-size: 12px;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
+  margin-left: -0.3rem;
+  margin-top: -30px;
+}
+
+.id {
+  font-size: 12px;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
+  margin-left: -0.3rem;
+  margin-top: -75px;
+}
+
+.namepci {
+  font-size: 12px;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
+  margin-left: -0.3rem;
+  margin-top: -30px;
+}
+
+.idpci {
+  font-size: 12px;
+  font-family: Arial;
+  padding: -1px 0px 0px 0px;
+  margin-left: -0.3rem;
+  margin-top: -75px;
+}
+
+.pci {
+  font-weight: bold;
+  font-family: Tahoma;
+  font-size: 13px;
+  margin-top: -40px;
+}
+
+.info-header {
+  line-height: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Tahoma;
+  padding-left: 1rem;
+}
+
+.greybackgroundcolor {
+  background-color: white;
+}
+
+.greybackgroundcolor1 {
+  background-color: white;
+}
+
+.backgroundcolorufo {
+  background-color: white;
+}
+
+.pfi-divider {
+  width: 41%;
+  top: 115px;
+  left: 16px;
+}
+
+.pci-divider {
+  width: 39%;
+  top: 187px;
+  left: 16px;
+}
+
+:host ::ng-deep {
+  .mat-toolbar-multiple-rows {
+    min-height: 30px;
+  }
+}

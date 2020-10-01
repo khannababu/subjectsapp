@@ -1,0 +1,88 @@
+
+<div class="subjects-title" fxLayout="row" fxLayoutGap="auto">
+    <div class="subjects-title-text" fxLayout="col">Subjects</div>
+    <div class="subject-bttns" fxLayout="col" fxLayoutGap="8px">
+        <button mat-raised-button class="crud-bttn">
+            <mat-icon svgIcon="note-add"></mat-icon>
+            Add
+        </button>
+        <button mat-raised-button class="crud-bttn">
+            <mat-icon svgIcon="edit"></mat-icon>
+            Edit
+        </button>
+        <button mat-raised-button class="crud-bttn">
+            <mat-icon svgIcon="delete"></mat-icon>
+            Remove
+        </button>
+        <button mat-raised-button class="crud-bttn">
+            <mat-icon svgIcon="search"></mat-icon>
+            Search - ActOne
+        </button>
+    </div>
+    <div class="paginator-bttn" fxLayout="col" fxLayoutGap="8px">
+        <mat-paginator class="paginator" [pageSizeOptions]="[10, 10]" (page)="onPageClicked()"></mat-paginator>
+    </div>
+</div>
+<div class=tab-container>
+    <ul class="tabs clearfix">
+        <li *ngFor="let tab of tabs" (click)="onSelectTab(tab)"
+            [ngClass]="tab?.label === selectedTab?.label || (tab?.isClosable &&  tab?.label === 'Subject') ? 'active-tab' : 'inactive-tab'">
+            <div fxLayout="row">
+                <span class="name-label">{{tab.label}}</span>
+                <mat-icon style="padding-left: 2rem;" *ngIf="tab.isClosable" (click)="onMaximize(tab)"
+                    class="subject-tab-icon" svgIcon="open_in_new">
+                </mat-icon>
+                <mat-icon *ngIf="tab.isClosable" (click)="onClose(tab)" class="subject-tab-icon" class="close-icon">
+                    close</mat-icon>
+            </div>
+            <window *ngIf="tab?.isMaximized" [id]="tab?.subject?.id" [title]="tab?.subject?.name">
+            </window>
+        </li>
+    </ul>
+</div>
+<div *ngIf="selectedTab === undefined || !selectedTab.isClosable" class=outer-circle>
+    <div class="card-list" [fxLayout]="layoutStyle" [fxLayoutGap]="layoutGap">
+        <mat-card class="subjects-card" *ngFor="let subject of obs | async" (click)="onExpand(subject)">
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 1rem;">
+                <mat-card-title>Name:</mat-card-title>
+                <mat-card-subtitle>{{subject.name}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
+                <mat-card-title>Role:</mat-card-title>
+                <mat-card-subtitle>{{subject.role}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
+                <mat-card-title>Type:</mat-card-title>
+                <mat-card-subtitle>{{subject.type}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
+                <mat-card-title>SSN:</mat-card-title>
+                <mat-card-subtitle>{{subject.ssn}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
+                <mat-card-title>Address:</mat-card-title>
+                <mat-card-subtitle>{{subject.address}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
+                <mat-card-title>City:</mat-card-title>
+                <mat-card-subtitle>{{subject.city}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
+                <mat-card-title>Zip:</mat-card-title>
+                <mat-card-subtitle>{{subject.zip}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
+                <mat-card-title>Phone:</mat-card-title>
+                <mat-card-subtitle>{{subject.phone}}</mat-card-subtitle>
+            </div>
+            <div fxLayout="col" fxLayoutGap="auto" style="padding-right: 2.15rem;">
+                <mat-card-title>Source:</mat-card-title>
+                <mat-card-subtitle>{{subject.source}}</mat-card-subtitle>
+            </div>
+        </mat-card>
+    </div>
+</div>
+<ng-template [ngIf]="selectedTab?.subject">
+    <app-actual-subject-card [id]="selectedTab?.subject?.id">
+    </app-actual-subject-card>
+</ng-template>
