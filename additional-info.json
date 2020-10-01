@@ -1,0 +1,26 @@
+[
+  {
+    "assignedOn": "Content",
+    "createdBy": "Sinha Nabanish",
+    "updatedOn": "06/12/2020",
+    "updatedBy": "Administrator",
+    "stampStatus": "Content",
+    "riskScore": 0,
+    "invScore": 100,
+    "priorityScore": 50,
+    "invPriority": "Content",
+    "summary": "Content",
+    "businesUnit": "Content",
+    "createdByUserID": "Content",
+    "dateUFOSubmitted": "Content",
+    "investigationType": "Content",
+    "alertedAccountNO": "Content",
+    "invCategory": "Content",
+    "invInitiatedByWCASTN": "Content",
+    "scenarioDescription": "Content",
+    "stampSource": "Content",
+    "subType": "Referral",
+    "recentSARFilingType": "Content",
+    "dateDetected": "Content"
+  }
+]
